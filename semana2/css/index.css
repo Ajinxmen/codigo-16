@@ -3,7 +3,7 @@ h1{
     /* si uan fuente no existe */
     /* en css tenemos la opcion de poner varios tipos de letra */
     /* para que si la primera no existe css busque en al segunda y asi consecutivamente */
-    font-family: apple-system, Helvetica, Arial, sans-serif;
+    font-family: 'Joan', Helvetica, Arial, sans-serif;
     font-size: 45px;
     font-weight: 100;
     text-decoration: underline;
@@ -63,4 +63,28 @@ ul{
     /* UPPERCASE = MAYUSCULAS */
     /* CAPITALIZE = PRIMERA DEL TEXT EN MAYUSCULA*/
     text-transform: lowercase;
+}
+
+/*! Para que CSS pueda leer una fuente desde un archivo*/
+/*! tenemos que @font-face esto permite cargar uan fuente externa/
+/*! y darle un nombre para su uso*/
+
+
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Noto";
+    src: url("../fonts/NotoSans-Light.ttf");
+}
+
+.title-2{
+    font-family: "Noto";
+}
+
+.parrafo-2{
+    font-family: "Roboto";
 }
