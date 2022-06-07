@@ -1,0 +1,15 @@
+body{
+    color: blue;
+}
+h1{
+    text-align: center;
+    color: gray;
+    text-decoration: underline;
+}
+tr{
+    text-align: center;
+}
+th{
+    font-weight: bold;
+    background: black;
+}   
