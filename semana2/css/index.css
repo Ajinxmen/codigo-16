@@ -22,5 +22,45 @@ h1{
     /* Al poner none en una propiedad, se invalida */
     text-decoration: none;
     color: rgb(53, 146, 239)
-    
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    background-color: rgba(53, 146, 239, 0.5);
+}
+
+.span-1{
+    text-decoration: line-through;/*tachado*/
+    text-transform: capitalize;
+}
+.span-2{
+    text-decoration: overline;/*linea sobre texto*/
+}
+.span-3{
+    text-decoration: underline;/*linea bajo texto*/
+    text-transform: uppercase;
+}
+.span-4{
+    text-decoration: line-through;/*linea bajo texto*/
+    text-decoration-color: #f01;
+}
+.span-5{
+    text-decoration: overline;/*linea bajo texto*/
+    background-color: #0ba;
+    text-decoration-color: #fff;
+}
+.span-6{
+    text-decoration: underline;/*linea bajo texto*/
+    background-color: rgb(252, 90, 255);
+    text-decoration-color: rgb(255, 183, 0);
+    color: #fff;
+    /* INDICAMOS QUE EL TEXTO SEA EN MINUSCULAS */
+    /* LOWERCASE = MINUSCULAS */
+    /* UPPERCASE = MAYUSCULAS */
+    /* CAPITALIZE = PRIMERA DEL TEXT EN MAYUSCULA*/
+    text-transform: lowercase;
 }
