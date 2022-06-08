@@ -1,0 +1,98 @@
+html{
+    font-size: 13px;
+}
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+h1{
+    
+    /* font-size: 2em; 2 * 20px(body) = 40px */
+    font-size: 2rem;
+    /* 2 x 10px(html: raiz) = 20px */
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.solid{
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}
+
+.dashed{
+    border-style: dashed;
+    border-color: green;
+    border-width: 3px;
+    
+}
+
+.dotted{
+    border: 3px dotted brown;
+}
+
+.double{
+    border-style: double;
+}
+
+.groove{
+    border-style: groove;
+}
+
+.hidden{
+    border-style: hidden;
+}
+
+.inherit{
+    border-style: inherit;
+}
+.initial{
+    border-style: initial;
+}
+.inset{
+    border-style: inset;
+}
+.none{
+    border-style: none;
+}
+.outset{
+    border-style: outset;
+}
+.ridge{
+    border-style: ridge;
+}
+.unset{
+    border-style: unset;
+}
+
+#bnuevo:hover{
+    color: blue;
+    border-style: hidden;
+}
+
+.left_solid{
+    border-left: solid red 2px;
+}
+
+.small{
+    font-size: 0.6em; /*  */
+}
+
+.top-dashed{
+    border-top: dashed 2px gray;
+}
+
+.bottom-double{
+    border-bottom: double 5px rebeccapurple;
+}
+
+.mix-left-top{
+    border-style: solid dotted solid dotted;
+    border-width: 4px 8px 2px;
+    border-color: black red lightcoral;
+}
