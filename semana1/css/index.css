@@ -1,0 +1,38 @@
+body{
+    background: rgb(255, 255, 255);
+}
+
+h1,h2,h3{
+    font-family: "PTSans";
+}
+
+h1{
+   text-align: center;
+}
+
+th, td{
+    font-family: "Signika";
+}
+
+th{
+    background-color: #1777a3;
+}
+
+td{
+    text-align: center;
+    background-color: #1fbdcb;
+}
+
+.grupoA{
+   
+}
+
+@font-face {
+    font-family: "Signika";
+    src: url("../fonts/SignikaNegative-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PTSansNarrow-Regular.ttf");
+}
