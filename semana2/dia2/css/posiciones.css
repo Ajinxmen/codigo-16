@@ -1,0 +1,32 @@
+body{
+    font-family: Verdana;
+
+}
+
+.bg{
+    border: solid;
+    height: 300px;
+}
+
+.color-red{
+    background-color: red;
+    
+}
+
+.color-green{
+    background-color: green;
+}
+
+.bg-img{
+    background: url(../../../semana1/images/maplestory-1146x645.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bg-karate{
+    background: url(../../../semana1/images/karate.png);
+    height: 500px;
+    color: pink;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
