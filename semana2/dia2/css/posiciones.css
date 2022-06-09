@@ -21,6 +21,7 @@ body{
     background: url(../../../semana1/images/maplestory-1146x645.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 .bg-karate{
@@ -29,4 +30,5 @@ body{
     color: pink;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }

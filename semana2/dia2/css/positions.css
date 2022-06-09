@@ -1,0 +1,80 @@
+.bg-box {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    /* para mover este elemento por todo el navegador */
+    position: relative;
+    /* al agregar un position a un element este nos da 
+    la opcion de usar lo siguiente
+    !top
+    !left
+    !right
+    !bottom
+     */
+    top: 100px;
+    /* left: 100px; */
+    right: 100px;
+}
+
+.padre {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+.hijo {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% -50px)
+}
+
+/* la clase bandera es el contenedor que ocupa
+toda la pantalla */
+
+/* vh viewport height es una unidad de medida
+el rango va de 0 al infinito */
+/* !sin embargo 100vh = al alto de la pantalla */
+/* si ponemos que un div valga 200vh => a que el div 
+ocupe basicamente el alto de 2 pantallas */
+.bandera {
+    height: 100vh;
+    border: solid;
+    /* vamos a poner un position relative
+    en este div */
+    position: relative;
+}
+
+.green {
+    background-color: green;
+    height: 100vh;
+    width: 40%;
+    float: left;
+}
+
+.red {
+    background-color: red;
+    height: 100vh;
+    width: 60%;
+    float: right;
+}
+/* Nota: sabemos que la foto mide 180px x 180px */
+/* El cuadrado que lo contiene mide 200px x 200px */
+/* Para que la foto crezca y ocupe esos pixeles sobrantes */
+/* podemos usar la propiedad cover */
+.escudo {
+    background: url(../../../semana1/images/portugal.svg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(40% - 100px);
+    
+}
