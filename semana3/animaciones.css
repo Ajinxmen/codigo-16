@@ -1,0 +1,22 @@
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: all 2s;
+    display: flex;
+    /* transition: width 6s, height 6s, background-color 6s; */
+}
+
+h5{
+    padding: 50px 70px;
+    text-align: center;
+}
+#box:hover{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right, red 33%, white 33%,white 69%, red 69%, red 100%);
+    border: 1px black solid;
+    transform: translate(50px, 50px);
+    transition: all 6s;
+    /* transition: width 6s, height 6s, background-color 6s, transform 2s; */
+}

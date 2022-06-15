@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    background-color: #1c253f;
+    height: 100vh;
+    font-family: 'Fredoka';
+    color: white;
+}
+
+.subtitle{
+    border: solid red 3px;
+    height: 300px;
+    width: 25%;
+}
+.container-info{
+    background-color: #22326b;
+    border-radius: 10px;
+}
+
+#button-search{
+    background-color: #0d6efd;
+    color: white;
+}
+

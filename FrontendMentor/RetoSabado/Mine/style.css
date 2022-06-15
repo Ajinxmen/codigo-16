@@ -1,0 +1,68 @@
+body{
+    background-color: #1c253f;
+    color: #fff;
+    font-family: 'Fredoka-Regular';
+    height: 100vh;
+}
+
+.contenedor{
+    width: 375px;
+    margin: auto;
+    left: -6.5%;
+    position: relative;
+    top:25%;
+    transform: rotateY(-50%);
+}
+
+
+.contenedor-tabla{
+    /* border: 5px white solid; */
+    margin-left: 0px;
+    padding-right: 200px;
+}
+
+.contenedor-hijo{
+    margin-top: 20px;
+    background: #22326b;
+    border-radius: 10px;
+}
+
+.avatar{
+    border-radius: 50%;
+}
+.contenedor-hijo td{
+   
+    padding: 67.5px;
+    height: 10px;
+}
+
+.contenedor-hijo p{
+    margin-top: 1px;
+}
+.input{
+    font-family: 'Fredoka-Regular';
+    font-size: 16px;
+    border: none;
+    width: 515px;
+    height: 35px;
+    padding-left: 15px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+.submit{
+    border: none;
+    width: 175px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Fredoka-Regular';
+    color: white;
+    background-color: #0d6efd;
+}
+
+
+@font-face {
+    font-family: 'Fredoka-Regular';
+    src: url(./fonts/Fredoka-Regular.ttf);
+}
