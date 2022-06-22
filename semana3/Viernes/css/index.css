@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body{
+    background-color: #C8EBE3;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+header{
+    background-color: #2CCAC1;
+    height: 10vh;
+    text-align: center;
+}
+
+main{
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ! NOTA: */
+/* ! Para usar flex-grow el padre debe  */
+/* ! tener display flex */
+aside{
+    background-color: #6edc6e;
+    flex-grow: 0.5;
+}
+
+.container{
+    background-color: #fbb14a;
+    flex-grow: 2;
+}
+
+footer{
+    background-color: #2ccac1;
+    height: 20vh;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px){
+    main{
+        flex-direction: column;
+    }
+}
