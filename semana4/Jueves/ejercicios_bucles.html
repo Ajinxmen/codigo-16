@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 300px;
+            min-height: 100px;
+            background-color: #ddd;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+<script>
+    const div_container = document.getElementById('container');
+    div_container.innerHTML = "<h1>Ejercicios Bucles</h1>"
+
+    //Factorial
+    // const numero = 6;
+    // div_container.innerHTML = "<h2>Factorial de "+numero+"</h2>"
+
+    // let factorial = 1;
+    // for (let i = 1;  i<= numero; i++) {
+    //     factorial = factorial * i;
+    // }
+
+    // div_container.innerHTML += "<p>Resultado: "+factorial+"</p>";
+    // div_container.innerHTML += "<hr>";
+
+  
+    //Suma de numeros positivos de 2 cifras que terminan en 7
+    let SumaNumeroPositivos=0;
+    for (let index = 10; index <= 99; index++) {
+       if(index%10==7) SumaNumeroPositivos+=index;
+    }
+
+    div_container.innerHTML="<h1> Suma: "+SumaNumeroPositivos+"</h1>";
+
+</script>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js - Condicionales</title>
+    <style>
+        * {
+            font-family: sans-serif;
+
+        }
+
+        .desaprobado {
+            color: red;
+        }
+
+        .aprobado {
+            color: blue;
+        }
+
+        .frio {
+            background-color: #023047;
+            font-weight: 600;
+            color: white;
+
+        }
+
+        .templado {
+            background-color: #8ecae6;
+            font-weight: 600;
+            color: white;
+        }
+
+        .calido {
+            background-color: #e9c46a;
+            font-weight: 600;
+            color: white;
+        }
+
+        .tropical {
+            background-color: #fb8500;
+            font-weight: 600;
+            color: white;
+        }
+
+        .inexistente {
+            background-color: #d62828;
+            font-weight: 600;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Martes 21 Junio</h1>
+    <h2>Condicionales + document.write()</h2>
+    <hr>
+</body>
+<script type="text/javascript">
+    // Codigo de Javascript:
+    // document.write Permite escribir dentro del html
+    document.write("<h3>Notas</h3>");
+
+    // let nota = 10; //Nota de un alumno
+    // nota = Number(prompt("Ingrese nota: "));
+
+    // if (isNaN(nota)) {
+    //     5
+    //     alert("Solo numeros por favor");
+    //     nota = Number(prompt("Ingrese nota: "));
+    // }
+    // 5
+    // if (nota < 11) {
+    //     document.write("<p class='desaprobado'>" + nota + "</p>")
+    //     document.write("<p class='desaprobado'>Desaprobado</p>");
+    // } else {
+    //     document.write("<p class='aprobado'>" + nota + "</p>")
+    //     document.write("<p class='aprobado'>Aprobado</p>");
+    // }
+    // document.write("<hr>");
+
+    // //Triangulos:
+    // document.write("<h3>Triangulos</h3>"); //Escribe dentro del html
+    // let angulo = 400;
+
+    // document.write("<p>" + angulo + "</p>");
+
+
+    // if(angulo == 0){
+    //     document.write("<p>Nulo</p>");5
+    // }
+    // if (angulo < 90) {
+    //     document.write("<p>Agudo</p>");
+    // } else {
+    //     if (angulo == 90) {
+    //         document.write("<p>Recto</p>");
+    //     } else {
+    //         if (angulo < 180) {
+    //             document.write("<p>Obtuso</p>");
+    //         } else {
+    //             if (angulo == 180) {
+    //                 document.write("<p>Llano</p>");
+    //             } else {
+    //                 if (angulo < 360) {
+    //                     document.write("<p>Concavo</p>");
+    //                 }else{
+    //                     document.write("<p>Inexistente</p>");
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // if (angulo == 0) {
+    //     document.write("<p>Nulo.</p>");
+    // } else if (angulo < 90) {
+    //     document.write("<p>Águdo.</p>");
+    // } else if (angulo == 90) {
+    //     document.write("<p>Recto.</p>");
+    // } else if (angulo < 180) {
+    //     document.write("<p>Obtuso.</p>");
+    // } else if (angulo == 180) {
+    //     document.write("<p>Llano.</p>");
+    // } else if (angulo < 360) {
+    //     document.write("<p>Concavo.</p>");
+    // } else if (angulo == 360) {
+    //     document.write("<p>Completo.</p>");
+    // } else {
+    //     document.write("<p>INEXISTENTE.</p>");
+    // }
+
+    // let temperatura = 0;
+    // temperatura = Number(prompt("Ingresa la temperatura:"));
+
+    // if(isNaN(temperatura)){
+    //     alert("Ingrese un numero:");
+    //     temperatura = Number(prompt("Ingresa la temperatura:"));
+    // }
+    // if (temperatura < 10) {
+    //     document.write("<p class='frio'>Clima Frio</p>");
+    // }else if(temperatura > 10 && temperatura <= 16){
+    //     document.write("<p class='templado'>Clima Templado</p>");
+    // }else if(temperatura > 17){
+    //     document.write("<p class='calido'>Clima Calido</p>");
+    // }else if(temperatura <= 24){
+    //     document.write("<p class='calido'>Clima Calido</p>");
+    // }else if(temperatura > 24){
+    //     document.write("<p class='calido'>Clima Tropical</p>");
+    // }else{
+    //     document.write("<p class='inexistente'>Inexistente</p>");
+    // }
+      
+    // else {
+    //     if (temperatura <= 11 && temperatura >= 16) {
+    //         document.write("<p class='templado'>Clima Templado</p>");
+    //     }
+    //     else {
+    //         if (temperatura <= 17 && temperatura >= 24) {
+    //             document.write("<p class='calido'>Clima Calido</p>");
+    //         } else {
+    //             if (temperatura > 24) {
+    //                 document.write("<p class='tropical'>Clima Tropical</p>");
+    //             }else{
+    //                 
+    //             }
+    //         }
+    //     }
+    // }
+
+
+        let hora = 21;
+
+        if(hora < 18 && hora > 6){
+            document.write("<p>Es de dia</p>")
+        }else{
+            document.write("<p>Es de noche</p>")
+        }
+
+        let nombre = 'Magaly';
+        let edad = 30;
+        let estado_civil= 'soltera';
+        let numero_hijos = 0;
+
+        if(edad > 30 || estado_civil=="casada" 
+        || numero_hijos >0){
+            document.write("<p>Buen dia sra. "+nombre+"</p>")
+        }else{
+            document.write("<p>Buen dia srta. "+nombre+"</p>")
+        }
+
+
+
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 300px;
+            min-height: 100px;
+            background-color: #ddd;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+</body>
+<script>
+    const div_container = document.getElementById("container");
+    div_container.innerHTML = "<h1>Bucles</h1>";
+
+    //break
+    let frutas = ['pera','manzana','limon','fresa','naranja'];
+
+    // for(let iter = 0; iter < frutas.length; iter++){
+    //     div_container.innerHTML += "<p>" + frutas[iter] + "</p>";
+    // }
+    // let numero = prompt("Ingrese el numero: ");
+    const numero_tablas = 20;
+
+    // for(let iter = 0; iter <= 20; iter++){
+    //     div_container.innerHTML+= "<h2>Tabla del "+iter+ ":</h2>"
+    //     div_container.innerHTML+="<p>" +iter+" x "+numero+" = "+numero*iter+"</p>";
+    //     // div_container.innerHTML+="<p>i x j = (i*j)</p>";
+    //     for (let j = 1; j < 10; j++){
+    //         let texto = i + " x "+ j + " = "+ (i*j);
+    //         div_container.innerHTML += "<p>" + texto + "</p>";
+    //     }
+    // }
+
+    // let iter=0;
+    // while(iter < frutas.length){
+    //     div_container.innerHTML += "<p>" + frutas[iter] + "</p>";
+    //     if(frutas[iter]=='limon'){
+    //         break;
+    //     }
+    //     iter++;
+    // }
+    
+    
+    // FOR OF: Estructura de control para poder recorrer Objetos iterables
+    // Array,String,Map,Set
+
+    let productos = [
+        'mouse',
+        'teclado',
+        'parlante',
+        'monitor',
+        'celular',
+        'adaptador',
+        'cargador',
+    ];
+    
+    //for (var iter OF objetoIterable){ ... }
+    for(let x of frutas){
+        div_container.innerHTML += "<p> - " + x + "</p>";
+    }
+    div_container.innerHTML += "<hr>";
+
+    //for(var key in objetoIterable){ ... }
+    for(let x in productos){
+        div_container.innerHTML += "<p> - " + productos[x] + "</p>";
+    }
+    div_container.innerHTML += "<hr>";
+
+</script>
+</html>

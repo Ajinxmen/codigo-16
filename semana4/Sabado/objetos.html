@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #form{
+        width: 400px;
+        min-height: 60px;
+        background-color: #eee;
+        margin: 20px auto;
+        padding: 10px;
+        border: 3px solid black;
+        display: none;
+    }
+
+    #container{
+        width: 400px;
+        min-height: 100px;
+        background-color: #ddd;
+        margin: 20px auto;
+        padding: 10px;
+        border: 3px solid black;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+
+    p{
+        margin: 0px;
+    }
+
+    .ejemplo{
+        border: 2px solid black;
+    }
+
+    #cantidad{
+        margin: 5px auto;
+    }
+</style>
+<body>
+    <div id="form">
+    <h1>Entradas</h1>
+    <input type="text" id="input_numero">
+    <input type="button" onclick="add()" value="add">
+    <input type="button" onclick="reset()" value="reset">
+    </div>
+    <div id="container">
+        <!-- <input type="text" id="cantidad" placeholder="Ingrese un valor"> -->
+        <!-- <button onclick="crearCarros()">Crear Carros</button> -->
+    </div>
+</body>
+<script src="./objetos.js"></script>
+</html>

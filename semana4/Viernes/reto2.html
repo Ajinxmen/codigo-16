@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .container {
+        width: 400px;
+        min-height: 200px;
+        background-color: cadetblue;
+        padding: 10px;
+    }
+
+    button {
+        padding: 5px;
+        background-color: aquamarine;
+        border: none;
+        border-radius: 12px;
+        color: #333;
+    }
+
+    input {
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h3>Promedio de Notas</h3>
+        <input type="text" id="input_nota1" placeholder="Ingrese un nombre" />
+        <input type="text" id="input_nota2" placeholder="Ingrese un nombre" />
+        <input type="text" id="input_nota3" placeholder="Ingrese un nombre" />
+        <input type="text" id="input_nota4" placeholder="Ingrese un nombre" />
+        <button onclick="promedioNotas()">Calcular Promedio</button>
+        <div class="resultado"></div>
+    </div>
+</body>
+<script src="./reto2.js"></script>
+
+</html>

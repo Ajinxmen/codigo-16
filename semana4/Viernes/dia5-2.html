@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .container {
+      width: 400px;
+      min-height: 200px;
+      background-color: cadetblue;
+      padding: 10px;
+    }
+
+    button {
+      margin: 10px 0px;
+      padding: 5px;
+      background-color: aquamarine;
+      border: none;
+      border-radius: 12px;
+      color: #333;
+    }
+
+    input {
+        margin: 4px 4px;
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+  <body>
+    <div class="container">
+        <h1>Promedio de Notas</h1>
+      <input type="text" id="input_nota1" placeholder="Ingrese una nota" />
+      <input type="text" id="input_nota2" placeholder="Ingrese una nota" />
+      <input type="text" id="input_nota3" placeholder="Ingrese una nota" />
+      <input type="text" id="input_nota4" placeholder="Ingrese una nota" />
+      <button onclick="imprimirAlumnos()">Calcular Promedio</button>
+      <div>
+        <h4>Lista de Notas</h4>
+        <div class="resultado"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./dia5-2.js"></script>
+</html>
