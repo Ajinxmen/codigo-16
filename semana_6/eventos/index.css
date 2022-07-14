@@ -1,0 +1,13 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.text-error{
+    color: red;
+    display: none;
+}
+
+.correo-error{
+    color: red;
+    display: none;
+}
